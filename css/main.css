@@ -40,15 +40,16 @@ main {
 .title {
   width: max-content;
   padding: 2rem;
-  background-color: #ff0;
+  background-color: #f00;
 }
 
 .title h1 {
   line-height: 1;
+  color: #fff
 }
 
 .quick-info {
-  background-color: #f00;
+  background-color: #ff0;
 }
 
 @media (min-width: 30em) {
