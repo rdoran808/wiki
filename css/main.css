@@ -2,13 +2,13 @@ html {
   font: 100%/1.15 sans-serif;
 }
 
-body {
-  max-width: 48rem;
+ body {
+  max-width: 70rem;
   padding: 0 1rem;
   margin: 1rem auto;
   }
-  
-  nav ul {
+
+nav ul {
   list-style: none url(//:0);
   padding-left: 0;
 }
@@ -17,28 +17,65 @@ nav li {
   margin-top: 1rem; 
 }
 
-  p {
-  font: 1.05em/1.5 Georgia, serif;
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-  @media (min-width: 48em) {
-  
-/* Rescale all text and/or em-based elements to improve readability (and overall user experience) */
-  
-  body {
+.title,
+nav,.quick-info,
+main {
+  border: 0.5rem solid #000;
+}
+
+nav,
+.quick-info,
+main {
+  padding: 1rem;
+  margin-top: -0.5rem;
+}
+
+.title {
+  width: max-content;
+  padding: 2rem;
+  background-color: #ff0;
+}
+
+.title h1 {
+  line-height: 1;
+}
+
+.quick-info {
+  background-color: #f00;
+}
+
+@media (min-width: 30em) {
+
+   body {
     font-size: 125%;
   }
   
-/* Switch to horizontal layout */
-  
-  nav ul {
+  .grid {
     display: grid;
-    grid-auto-flow: column;
-    justify-content: start;
-    gap: 1rem;
+    grid-template-columns: 15em auto auto;
+    grid-template-rows:
+    gap: 0;
   }
   
-  nav li {
-     margin-top: 0;
+  .grid nav {
+    order: 3;
   }
+  
+  .grid .quick-info {
+    order: 1;
+  }
+  
+  .grid main {
+    order: 2;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+  
   
