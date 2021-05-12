@@ -70,8 +70,7 @@ main {
   .grid {
     display: grid;
     grid-template-columns: 15em auto auto;
-    grid-template-rows:
-    gap: 0;
+    gap: 0:
   }
   
   .grid nav {
