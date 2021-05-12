@@ -2,7 +2,17 @@ html {
   font: 100%/1.15 sans-serif;
 }
 
- body {
+img {
+max-width: 100%;
+height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+
+body {
   max-width: 70rem;
   padding: 0 1rem;
   margin: 1rem auto;
