@@ -61,7 +61,7 @@ main {
   background-color: #f00;
 }
 
-@media (min-width: 30em) {
+@media (min-width: 40em) {
 
    body {
     font-size: 125%;
